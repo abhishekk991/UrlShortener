@@ -17,8 +17,11 @@ public class UrlModel {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column(name = "long_url", nullable = false)
+    @Column(name = "long_url", columnDefinition = "TEXT", nullable = false)
     String longUrl;
+
+    @Column(name = "sha256_value", nullable = false)
+    String sha256Value;
 
     @Column(name = "short_url", nullable = false)
     String shortUrl;

@@ -11,6 +11,7 @@ import org.springframework.web.servlet.view.RedirectView;
 
 @RestController
 @RequestMapping
+@CrossOrigin(origins = "http://localhost:5173")
 public class UrlController {
 
     @Autowired
